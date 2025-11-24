@@ -529,8 +529,8 @@ rm -rf .sciagent/history/abc123def456/
 
 我们欢迎所有形式的贡献！
 
-- 🐛 **报告 Bug**：[提交 Issue](https://github.com/yourusername/sciagent/issues)
-- 💡 **功能建议**：[讨论区](https://github.com/yourusername/sciagent/discussions)
+- 🐛 **报告 Bug**：[提交 Issue](https://github.com/123pyLeo/sciagent/issues)
+- 💡 **功能建议**：[讨论区](https://github.com/123pyLeo/sciagent/discussions)
 - 📖 **改进文档**：提交 PR
 - ⭐ **如果觉得有用，请给个 Star！**
 
@@ -538,7 +538,7 @@ rm -rf .sciagent/history/abc123def456/
 
 ```bash
 # 1. Fork 项目并克隆
-git clone https://github.com/yourusername/sciagent.git
+git clone https://github.com/123pyLeo/sciagent.git
 cd sciagent
 
 # 2. 创建虚拟环境
@@ -569,17 +569,6 @@ MIT License - 详见 [LICENSE](LICENSE)
 ## 🙏 致谢
 
 感谢所有贡献者和用户的支持！
-
-如果 SciAgent 对你的研究有帮助，欢迎引用：
-
-```bibtex
-@software{sciagent2025,
-  title = {SciAgent: AI-Powered Experiment Guardian \& Analyzer},
-  author = {SciAgent Contributors},
-  year = {2025},
-  url = {https://github.com/yourusername/sciagent}
-}
-```
 
 ---
 
