@@ -1,4 +1,6 @@
-# 🔬 SciAgent
+<h1 align="center" style="font-size: 48px; font-weight: bold; margin-bottom: 10px;">
+🔬 SciAgent
+</h1>
 
 <div align="center">
 
