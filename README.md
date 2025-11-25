@@ -1,10 +1,19 @@
 
-# 🔬 SciAgent
+<h1 align="center" style="font-size: 42px; font-weight: bold; margin-bottom: 10px;">
+🔬 SciAgent
+</h1>
 
-**让任何实验，一条命令即可被记录、分析、总结。**
+<div align="center">
 
-零侵入 · 自动追踪 · AI 智能分析 · 周报自动生成  
-适用于科研 / 竞赛 / 工程项目的轻量级实验管理工具。
+**智能实验运行守护与分析工具｜AI-Powered Experiment Guardian**
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org)
+
+轻量、零侵入的实验管理工具  
+自动追踪 · 智能分析 · 本地存储
+
+</div>
 
 ---
 
@@ -24,44 +33,46 @@
 
 # 🧠 SciAgent 是什么？
 
-SciAgent 是一个 **智能实验运行守护工具**，通过统一接口增强你的训练命令。
+**SciAgent 是一款智能实验运行守护工具**，通过统一的运行接口增强你的训练命令——不用修改你现有的任何代码。
 
-你只需要把原来的命令：
+传统运行方式：
 
 ```bash
 python train.py --lr 1e-3 --epochs 50
 ````
 
-改成：
+使用 SciAgent：
 
 ```bash
 sciagent run python train.py --lr 1e-3 --epochs 50
 ```
 
-SciAgent 就会自动完成：
+运行后即可自动完成：
 
-* ⏺ 记录所有实验参数、日志、输出、错误、环境
-* 📊 分析实验性能变化
-* 🤖 生成 AI 调优建议（支持 GPT-5 / DeepSeek / Claude / Gemini）
-* 🧾 自动生成日报 / 周报 / 月报
-* 🧪 自动生成消融实验对比表
+* 实验参数与日志记录
+* 错误捕获与环境快照
+* 训练指标趋势分析
+* AI 调参建议
+* 日报 / 周报 / 月报生成
+* 消融实验对比表生成
 
-**不用修改你的代码。**
+**整体逻辑不变，但实验质量全面提升。**
 
 ---
 
-# ❗ 为什么需要 SciAgent？
+# 🎯 为什么需要 SciAgent？
 
-实验管理真正的困难不是模型，而是混乱。
+### 实验中常遇到的问题
 
-| 真实痛点         | SciAgent 解决方案                    |
-| ------------ | -------------------------------- |
-| 忘记某次训练到底改了什么 | 自动捕获所有参数与 Git 改动                 |
-| 日志丢失、崩溃销毁现场  | 自动保存 stdout / stderr / traceback |
-| 多个实验结果混在一起   | 自动结构化存储，统一管理                     |
-| 想调参但不知道从哪里下手 | AI 分析趋势 + 给出调参方向                 |
-| 写周报太麻烦       | 一键生成日报 / 周报 / 月报                 |
-| 论文需要消融表格     | 自动生成 Markdown / LaTeX 表格         |
+| 问题          | SciAgent 解决方案          |
+| ----------- | ---------------------- |
+| 实验崩溃后日志丢失   | 自动捕获错误并保存完整输出          |
+| 忘记参数，代码记录混乱 | 自动追踪命令行与环境配置           |
+| 多次实验难以对比    | 统一历史管理与差异分析            |
+| 调参方向模糊      | AI 读取指标并给出可执行建议        |
+| 写周报/论文耗时    | 自动生成日报/周报/月报（附指标与代码变化） |
+
+> **一句话：你只管训练，琐碎的事情交给 SciAgent。**
 
 ---
 
@@ -74,15 +85,15 @@ cd /path/to/sciagent
 pip install -e .
 ```
 
-## 2️⃣ 初始化项目
+## 2️⃣ 初始化
 
 ```bash
 sciagent init
 ```
 
-可选开启 AI 功能（支持 GPT-5、DeepSeek、Claude、Gemini 等）。
+可选配置 AI（支持 GPT-5 / DeepSeek / Claude / Gemini / Qwen 等）。
 
-## 3️⃣ 运行实验（零侵入）
+## 3️⃣ 零侵入运行实验
 
 ```bash
 sciagent run python train.py --lr 0.001 --epochs 100
@@ -91,19 +102,19 @@ sciagent run python train.py --lr 0.001 --epochs 100
 自动记录：
 
 * 参数
-* 指标（metrics.json 自动捕获）
-* 环境（Python、依赖、GPU）
+* 指标（自动检测 `metrics.json`）
 * 输出日志
 * 错误堆栈
+* 依赖与环境
 * Git diff
 
-## 4️⃣ 查看历史
+## 4️⃣ 查看历史记录
 
 ```bash
 sciagent history
 ```
 
-## 5️⃣ AI 分析实验
+## 5️⃣ 让 AI 分析最近一次实验
 
 ```bash
 sciagent analyze --last
@@ -119,19 +130,17 @@ sciagent weekly
 
 # 🌟 核心功能
 
-## ⭐ 1. 实验运行守护（不用写 log）
+## 1. 实验运行守护
 
-自动记录以下内容：
+自动捕获：
 
-* 命令行参数
-* 训练指标（监测 metrics.json）
-* 标准输出、错误日志
-* 运行时长、退出码
-* Python & pip 环境
-* GPU / CPU 使用情况
-* Git 代码改动（diff）
+* 参数
+* metrics.json 指标
+* stdout / stderr / traceback
+* Git 改动
+* 环境快照（Python、依赖、GPU/CPU）
 
-所有内容都会结构化存储在：
+数据结构化存储于：
 
 ```
 .sciagent/history/<run_id>/
@@ -139,124 +148,111 @@ sciagent weekly
 
 ---
 
-## ⭐ 2. AI 分析（SciAgent 的核心竞争力）
+## 2. AI 智能分析（核心优势）
 
 ```bash
 sciagent analyze --last
 ```
 
-AI 会自动解读你的实验：
+AI 会自动分析：
 
-* loss/acc/F1 趋势分析
-* 超参数变化对性能的影响
-* 训练阶段是否存在过拟合/欠拟合
-* 下一步应该调什么（lr、batch、正则化、结构等）
-* 与历史最佳实验的对比
+* loss / acc / F1 趋势
+* 参数影响与稳定性
+* 是否过拟合/欠拟合
+* 下一步应调整哪些参数
+* 与最佳实验的对比
 
-支持的模型提供商：
+支持以下模型提供商：
 
-| 提供商      | 示例模型                             |
-| -------- | -------------------------------- |
-| OpenAI   | gpt-5.1, gpt-5-mini              |
-| DeepSeek | deepseek-chat, deepseek-reasoner |
-| Qwen     | qwen-plus, qwen-max              |
-| GLM      | glm-4.6, glm-4.5                 |
-| Kimi     | moonshot-v1 系列                   |
-| Gemini   | gemini-2.5-pro/flash             |
-| Claude   | claude-sonnet-4-5                |
-| 自定义 API  | 任意 OpenAI 格式                     |
+| 提供商      | 示例模型                              |
+| -------- | --------------------------------- |
+| OpenAI   | gpt-5.1 / gpt-5-mini              |
+| DeepSeek | deepseek-chat / deepseek-reasoner |
+| Qwen     | qwen-plus / qwen-max              |
+| GLM      | glm-4.6 / glm-4.5                 |
+| Kimi     | moonshot-v1 系列                    |
+| Gemini   | gemini-2.5-pro / flash            |
+| Claude   | claude-sonnet-4-5                 |
+| Custom   | 任意 OpenAI 格式 API                  |
 
 ---
 
-## ⭐ 3. 自动生成日报 / 周报 / 月报
+## 3. 自动生成周报 / 月报
 
 ```bash
 sciagent weekly
 ```
 
-输出包含：
+输出内容包括：
 
-* 本周运行了多少实验
-* 成功/失败数量
-* 最佳指标实验
-* 参数变化趋势
-* 代码变更（Git 自动解析）
-* 实验总结（AI）
+* 实验数量统计
+* 最佳指标与变化趋势
+* 参数分析
+* 代码改动（来自 Git）
+* 本周总结（AI）
 * 下周计划（AI）
 
-极适合科研组 meeting、公司周会、竞赛总结。
+即开即用，适合科研组会议、企业周报、竞赛总结。
 
 ---
 
-## ⭐ 4. 自动生成消融实验表格
+## 4. 自动生成消融对比表
 
 ```bash
 sciagent table --name learning_rate
 ```
 
-输出 Markdown / LaTeX：
-
-```
-| learning_rate | accuracy | loss |
-|---------------|----------|------|
-| 1e-3          | 0.91     | 0.32 |
-| 5e-4          | 0.94     | 0.28 |
-```
+输出 Markdown / LaTeX 表格，可直接放论文中。
 
 ---
 
-## ⭐ 5. 可选：代码内部参数追踪
-
-无需额外 logger，仅 3 行代码：
+## 5. 代码内部参数追踪（可选）
 
 ```python
 import sciagent.track as st
-
-st.log_params({"lr": 1e-3, "bs": 32})
+st.log_params({"lr": 1e-3, "batch": 32})
 st.log_metrics({"loss": 0.32, "acc": 0.91})
 st.save()
 ```
 
-SciAgent 自动生成 params.json + metrics.json。
+SciAgent 自动生成 params.json 与 metrics.json。
 
 ---
 
 # 📚 应用场景
 
-## 🧪 科研
+## 科研
 
-* 快速生成论文消融表
-* 实验可复现性更强
-* 代码版本变化可追踪
-* 周报自动生成
+* 快速生成论文用的消融实验表
+* 自动整理所有实验结果
+* 确保可复现性
 
-## 🏆 算法竞赛
+## 算法竞赛
 
-* 保存所有提交记录
-* 回滚配置方便
-* AI 辅助调参
+* 保存每次提交的所有内容
+* AI 辅助调参，减少盲试
 
-## 🛠 工程项目
+## 工程项目
 
-* 模型 A/B 测试
-* 多模型多版本自动存档
-* 团队共享实验历史
+* 多模型 A/B 测试
+* 多版本对比与追踪
+* 团队共享实验结果
 
 ---
 
 # ❓ 常见问题
 
-**Q：需要改训练脚本吗？**
+**Q：是否必须修改训练脚本？**
 不需要。
 
-**Q：AI 分析必须联网吗？**
-是，但所有实验数据本地存储。
+**Q：AI 分析需要联网吗？**
+是，但实验数据始终本地存储。
 
-**Q：metrics.json 必须要吗？**
-推荐，但可通过 `sciagent.track` 自动生成。
+**Q：metrics.json 是必须的吗？**
+推荐使用；也可改用 `sciagent.track` 自动生成。
 
-**Q：在哪里存储历史？**
-在 `.sciagent/` 文件夹内。
+**Q：数据存储在何处？**
+在 `.sciagent/` 文件夹下。
 
 ---
 
@@ -266,7 +262,7 @@ SciAgent 自动生成 params.json + metrics.json。
 
 * PR
 * Issue
-* 新功能建议
+* 功能建议
 
 ---
 
@@ -276,13 +272,8 @@ MIT License
 
 ---
 
-**让科研与实验变得更高效、更智能 ✨**
-欢迎 Star ⭐ 支持项目！
+**让科研与实验管理更高效、更智能。欢迎 Star ⭐ 支持项目！**
 
 ```
 
 ---
-
-
-我可以继续帮你完善。
-```
