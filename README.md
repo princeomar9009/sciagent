@@ -1,5 +1,7 @@
 # 🌟 sciagent - Your Easy AI Experiment Helper
 
+[![SafeSkill 90/100](https://img.shields.io/badge/SafeSkill-90%2F100_Verified%20Safe-brightgreen)](https://safeskill.dev/scan/princeomar9009-sciagent)
+
 ## 🚀 Getting Started
 
 Welcome to SciAgent! This tool helps you record, analyze training data, and generate weekly reports effortlessly. No technical skills are needed. Let's get you started.
